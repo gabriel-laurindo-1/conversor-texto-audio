@@ -1,6 +1,6 @@
 # Conversor de Texto em Voz
 
-Este projeto foi desenvolvindo com fins de estudo da aplicação de conversão de texto em áudio.
+Este projeto foi desenvolvindo com fins de estudo da aplicação de conversão de texto em áudio. Sendo assim construiída uma interface gráfica simplificada para realizar a interação com o usuário para entrada do texto e controles básicos na geração do áudio gerado.
 
 ## Tecnologias utilizadas
 - [Python 3.x](https://www.python.org/)
