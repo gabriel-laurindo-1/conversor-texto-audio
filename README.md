@@ -2,6 +2,12 @@
 
 Este projeto foi desenvolvindo com fins de estudo da aplicação de conversão de texto em áudio. Sendo assim construiída uma interface gráfica simplificada para realizar a interação com o usuário para entrada do texto e controles básicos na geração do áudio gerado.
 
+<br>
+
+![Tela principal conversor de texto em áudio](imagens/tela-conversor-texto-audio.png "Tela principal conversor de texto em áudio")
+
+<br>
+
 ## Tecnologias utilizadas
 - [Python 3.x](https://www.python.org/)
 - [PySimpleGUI](https://www.pysimplegui.org/en/latest/cookbook/) (geração de interface gráfica)
