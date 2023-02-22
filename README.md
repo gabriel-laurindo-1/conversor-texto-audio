@@ -39,5 +39,7 @@ $ auto-py-to-exe
 - __Passo 3:__ Em *Arquivo Único (One File)*, selecione a opção `Um arquivo (One File)`.
 - __Passo 4:__ Clique em `Converter .py para .exe (Convert .py to .exe)` e aguarde o térmido do processo de compilação.
 
+Em caso de dúvidas, verifique maiores infomações sobre o `auto-py-to-exe` [clicando aqui](https://pypi.org/project/auto-py-to-exe/).
+
 ---
 <p align="center">Autor: <a href="https://github.com/gabriel-laurindo-1"> Gabriel Laurindo &#169; 2023 </a> </p>
