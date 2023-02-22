@@ -1,0 +1,2 @@
+NAME_SIZE = 15
+MAX_RATE = 200
