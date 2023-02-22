@@ -7,3 +7,4 @@ __pycache__/
 # Extensões
 *.txt
 *.spec
+*.exe
