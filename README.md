@@ -25,5 +25,19 @@ $ pip install -r requirements.txt
 $ (.venv) app.py
 ~~~
 
+## Criação de arquivo .exe
+
+Caso deseje realizar a conversão desde script python para um arquivo executável, realize a seguinte sequência de tarefas:
+
+- __Passo 1:__ Abra a interface do `auto-py-to-exe`. Execute o seguinte comando em seu terminal.
+
+~~~bash
+$ auto-py-to-exe
+~~~
+
+- __Passo 2:__ Selecione o local em seu computador onde se encontra o arquivo `app.py`.
+- __Passo 3:__ Em *Arquivo Único (One File)*, selecione a opção `Um arquivo (One File)`.
+- __Passo 4:__ Clique em `Converter .py para .exe (Convert .py to .exe)` e aguarde o térmido do processo de compilação.
+
 ---
 <p align="center">Autor: <a href="https://github.com/gabriel-laurindo-1"> Gabriel Laurindo &#169; 2023 </a> </p>
