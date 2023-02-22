@@ -7,28 +7,28 @@ from textos import *
 
 sg.theme()    # Keep things interesting for your users
 
-def name(name):
-    return sg.Text(name + ': ', size=(NAME_SIZE, 1), justification='l', font='Courier 10')
+def name(name, width=NAME_SIZE):
+    return sg.Text(name + ': ', size=(width, 1), justification='l', font='Courier 10')
 
 #iniciando pyttsx3
 motor = pyttsx3.init()
 vozes = motor.getProperty('voices')
 nome_vozes = [voz.name for voz in vozes]
 
-layout = [[name(MENSAGEM_ENTRADA_USUARIO)],
-          [name('Voz'), sg.Combo(key='-VOICES-', size=(35, 10), values=nome_vozes, default_value=nome_vozes[0])],
+layout = [[name('Voz'), sg.Combo(key='-VOICES-', size=(LINE_SIZE_ELEMENT, 10), values=nome_vozes, default_value=nome_vozes[0])],
           [name('Velocidade'), sg.Slider(key='-RATE-',  range=(0.25, 2), orientation='h', resolution=0.05, default_value=1.0, enable_events=True, disable_number_display=True),
           sg.Text('1.0x', size=(4, 1), key=('-SLIDER-TEXT-'))],
-          [sg.Multiline(key='-TEXT-', size=(50, 10))],
-          [sg.Button('Converter'), sg.Save('Salvar'), sg.Exit('Sair')]]
+          [name(USER_TEXT_INPUT, 25)],
+          [sg.Multiline(key='-TEXT-', size=(MAX_SIZE_WIDTH, 10))],
+          [sg.Button(CONVERTER_BUTTON_TEXT), sg.Save(SAVE_BUTTON_TEXT), sg.Exit(EXIT_BUTTON_TEXT)]]
 
-window = sg.Window(NOME_APP, layout)
+window = sg.Window(APP_NAME, layout, size=WINDOW_MAIN_SIZE)
 
 while True:                             # The Event Loop
     event, values = window.read()
     # print(event, values)
 
-    if event == 'Converter':
+    if event == CONVERTER_BUTTON_TEXT:
         # print('Convertendo texto...')
         # print(values['-TEXT-'])
 
@@ -40,7 +40,7 @@ while True:                             # The Event Loop
         motor.runAndWait()
         motor.stop()
 
-    if event == 'Salvar':
+    if event == SAVE_BUTTON_TEXT:
         nome_arquivo = f'audio_{datetime.now().timestamp():.0f}.mp3'
         # print(nome_arquivo, 'criado com sucesso!')
 
@@ -64,7 +64,7 @@ while True:                             # The Event Loop
     except TypeError:
         pass
 
-    if event == sg.WIN_CLOSED or event == 'Sair':
+    if event == sg.WIN_CLOSED or event == EXIT_BUTTON_TEXT:
         break
 
 window.close()
