@@ -1,0 +1,9 @@
+
+# Diretórios
+.vscode/
+__pycache__/
+.venv/
+
+# Extensões
+*.txt
+*.spec
