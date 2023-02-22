@@ -1,0 +1,9 @@
+comtypes==1.1.14
+distlib==0.3.6
+filelock==3.9.0
+platformdirs==3.0.0
+pypiwin32==223
+PySimpleGUI==4.60.4
+pyttsx3==2.90
+pywin32==305
+virtualenv==20.19.0
